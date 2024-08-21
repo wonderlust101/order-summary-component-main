@@ -8,13 +8,16 @@
 
   &__details {
     display: grid;
-    gap: 2.25rem;
+    gap: 2rem;
     padding: 2.5rem;
   }
 
   &__type {
     display: flex;
     align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--clr-neutral-color-very-pale-blue);
   }
 
   &__type-icon {

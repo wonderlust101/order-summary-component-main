@@ -8,17 +8,19 @@
     width: 100%;
     color: var(--clr-white);
     background-color: var(--clr-primary-color-bright-blue);
-    box-shadow: 15px 15px 20px var(--clr-box-shadow);
+    box-shadow: 5px 10px 15px var(--clr-box-shadow-dark-1);
+    transition: background-color 0.1s ease;
 
     &:hover {
+      box-shadow: 5px 10px 15px var(--clr-box-shadow-dark-2);
       background-color: var(--clr-primary-color-bluish-purple);
-      box-shadow: 15px 15px 20px var(--clr-box-shadow);
     }
   }
 
   &--no-bg-grey {
     color: var(--clr-neutral-color-desaturated-blue);
     background-color: transparent;
+    transition: color 0.1s ease;
 
     &:hover {
       color: var(--clr-neutral-color-dark-blue);
@@ -28,6 +30,7 @@
   &--no-bg-dark-blue {
     color: var(--clr-neutral-color-dark-blue);
     background-color: transparent;
+    transition: color 0.1s ease;
 
     &:hover {
       color: var(--clr-primary-color-bluish-purple);

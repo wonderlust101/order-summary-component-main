@@ -2,19 +2,22 @@
 $colors: (
   // Main Colors
         primary-color: (
-                'pale-blue': hsl(225, 100%, 94%),
-                'bright-blue': hsl(245, 75%, 52%),
-                'bluish-purple': hsl(245, 52%, 55%),
+                'pale-blue': rgb(224, 232, 255),
+                'bright-blue': rgb(56, 41, 224),
+                'bluish-purple': rgb(91, 81, 200),
         ),
   // Neutral Colors
         neutral-color: (
-                'very-pale-blue': hsl(225, 100%, 98%),
-                'desaturated-blue': hsl(224, 23%, 55%),
-                'dark-blue': hsl(223, 47%, 23%),
+                'very-pale-blue': rgb(245, 247, 255),
+                'pale-blue': rgb(224, 232, 255),
+                'desaturated-blue': rgb(114, 128, 167),
+                'dark-blue': rgb(31, 47, 86),
         ),
   // Other
-        'background': #ffffff,
-        'box-shadow': rgba(0,0,0, 0.05),
+        'background': rgb(224, 232, 255),
+        'box-shadow-light': rgba(0, 0, 0, 0.05),
+        'box-shadow-dark-1': rgba(56, 41, 224, 0.25),
+        'box-shadow-dark-2': rgba(91, 81, 200, 0.25),
         'white': #ffffff,
         'black': #000000,
 );
