@@ -36,4 +36,8 @@
       color: var(--clr-primary-color-bluish-purple);
     }
   }
+
+  &__underline {
+    text-decoration: underline 2px solid;
+  }
 }
