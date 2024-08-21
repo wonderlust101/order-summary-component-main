@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Order Summary">
     <meta name="keywords" content="Order, Purchase, Steaming, Music, Membership">
-    <!--     <meta name="description" content="description"> -->
+    <meta name="description" content="An example of a order summary component.">
 
     <title>Frontend Mentor | Order summary card</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png"/>
@@ -18,34 +18,34 @@
         <img src="assets/images/illustration-hero.svg" alt="Illustration of woman dancing" aria-hidden="true">
 
         <section class="order-summary__details">
-            <section class="order-summary__section-grid">
+            <header class="order-summary__section-grid">
                 <h2>
                     <span class="sr-only">Here is your</span>
                     Order Summary
                 </h2>
 
                 <p aria-hidden="true">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-            </section>
+            </header>
 
-            <div class="order-summary__type">
+            <section class="order-summary__type">
                 <div class="order-summary__cost">
                     <img class="order-summary__type-icon" src="assets/images/icon-music.svg" alt="Music Icon" aria-hidden="true">
-                    <section>
+                    <div>
                         <h3>
                             Annual Plan
                             <span class="sr-only">of $59.99 a year</span>
                         </h3>
                         <p class="order-summary__term" aria-hidden="true">$59.99/year</p>
-                    </section>
+                    </div>
                 </div>
-                <a class="button--switch" href="#">Change</a>
-            </div>
+                <button class="button button--no-bg-dark-blue">Change</button>
+            </section>
 
-            <div class="order-summary__section-grid">
+            <footer class="order-summary__section-grid">
                 <a class="button button--blue" href="#">Proceed to Payment</a>
-                <p class="sr-only">or</p>
-                <a class="button button--no-bg" href="#">Cancel Order</a>
-            </div>
+                <span class="sr-only">or</span>
+                <a class="button button--no-bg-grey" href="#">Cancel Order</a>
+            </footer>
         </section>
     </main>
 </body>

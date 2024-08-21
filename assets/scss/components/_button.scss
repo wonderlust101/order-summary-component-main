@@ -2,8 +2,10 @@
   padding: 0.9rem;
   border-radius: 0.75rem;
   text-align: center;
+  border: none;
 
   &--blue {
+    width: 100%;
     color: var(--clr-white);
     background-color: var(--clr-primary-color-bright-blue);
     box-shadow: 15px 15px 20px var(--clr-box-shadow);
@@ -14,16 +16,18 @@
     }
   }
 
-  &--no-bg {
+  &--no-bg-grey {
     color: var(--clr-neutral-color-desaturated-blue);
+    background-color: transparent;
 
     &:hover {
       color: var(--clr-neutral-color-dark-blue);
     }
   }
 
-  &--switch {
+  &--no-bg-dark-blue {
     color: var(--clr-neutral-color-dark-blue);
+    background-color: transparent;
 
     &:hover {
       color: var(--clr-primary-color-bluish-purple);
