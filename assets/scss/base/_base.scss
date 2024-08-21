@@ -3,3 +3,25 @@
 :root {
   @include a.map-to-root(clr, a.$colors);
 }
+
+body {
+  background-image: url('../images/pattern-background-mobile.svg');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: var(--clr-neutral-color-very-pale-blue);
+  display: grid;
+
+  & > * {
+    place-self: center;
+  }
+
+  @include a.breakpoint(medium) {
+    background-image: url('../images/pattern-background-desktop.svg');
+  }
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}

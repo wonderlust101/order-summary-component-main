@@ -4,31 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--     <meta name="title" content="title"> -->
-    <!--     <meta name="keywords" content="keyword"> -->
+    <meta name="title" content="Order Summary">
+    <meta name="keywords" content="Order, Purchase, Steaming, Music, Membership">
     <!--     <meta name="description" content="description"> -->
 
-    <title>Document</title>
-    <!--         <link rel="icon" href="assets/images/favicon.png" /> -->
+    <title>Frontend Mentor | Order summary card</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png"/>
 
     <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
 <body>
-    <div style="display: grid; height: 100vh;">
-        <div style="width: 100%; background-color:var(--clr-primary-color-star-dust); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-election-night)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-crackled); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-fading-horizon)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-neon-spring); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-iris-royale)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-iris-royale); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-neon-spring)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-fading-horizon); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-crackled)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-election-night);display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-star-dust)">Neon Genesis Evangelion</h1></div>
-    </div>
+    <main class="order-summary">
+        <img src="assets/images/illustration-hero.svg" alt="Illustration of woman dancing" aria-hidden="true">
 
-    <script src="assets/scripts/index.js"></script>
+        <section class="order-summary__details">
+            <section class="order-summary__section-grid">
+                <h2>
+                    <span class="sr-only">Here is your</span>
+                    Order Summary
+                </h2>
+
+                <p aria-hidden="true">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            </section>
+
+            <div class="order-summary__type">
+                <div class="order-summary__cost">
+                    <img class="order-summary__type-icon" src="assets/images/icon-music.svg" alt="Music Icon" aria-hidden="true">
+                    <section>
+                        <h3>
+                            Annual Plan
+                            <span class="sr-only">of $59.99 a year</span>
+                        </h3>
+                        <p class="order-summary__term" aria-hidden="true">$59.99/year</p>
+                    </section>
+                </div>
+                <a class="button--switch" href="#">Change</a>
+            </div>
+
+            <div class="order-summary__section-grid">
+                <a class="button button--blue" href="#">Proceed to Payment</a>
+                <p class="sr-only">or</p>
+                <a class="button button--no-bg" href="#">Cancel Order</a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

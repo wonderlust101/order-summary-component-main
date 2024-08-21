@@ -1,0 +1,32 @@
+.button {
+  padding: 0.9rem;
+  border-radius: 0.75rem;
+  text-align: center;
+
+  &--blue {
+    color: var(--clr-white);
+    background-color: var(--clr-primary-color-bright-blue);
+    box-shadow: 15px 15px 20px var(--clr-box-shadow);
+
+    &:hover {
+      background-color: var(--clr-primary-color-bluish-purple);
+      box-shadow: 15px 15px 20px var(--clr-box-shadow);
+    }
+  }
+
+  &--no-bg {
+    color: var(--clr-neutral-color-desaturated-blue);
+
+    &:hover {
+      color: var(--clr-neutral-color-dark-blue);
+    }
+  }
+
+  &--switch {
+    color: var(--clr-neutral-color-dark-blue);
+
+    &:hover {
+      color: var(--clr-primary-color-bluish-purple);
+    }
+  }
+}

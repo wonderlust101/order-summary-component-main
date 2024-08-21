@@ -1,6 +1,22 @@
 @use '../abstract' as a;
 
 h1, h2, h3, h4,
-h5, h6, p {
+h5, h6, p, a {
+  font-family: "Red Hat Display", sans-serif;
+  color: var(--clr-neutral-color-dark-blue);
+}
 
+h2 {
+  font-weight: 900;
+}
+
+p {
+  font-weight: 600;
+  line-height: 1.75;
+  color: var(--clr-neutral-color-desaturated-blue);
+}
+
+a {
+  font-size: 1rem;
+  font-weight: 800;
 }
