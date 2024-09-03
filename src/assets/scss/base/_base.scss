@@ -1,16 +1,17 @@
-@use '../abstract' as a;
+@use '../abstract/index' as a;
 
 :root {
   @include a.map-to-root(clr, a.$colors);
 }
 
-body {
+main {
+  display: grid;
+  height: 100vh;
   background-image: url('../images/pattern-background-mobile.svg');
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
   background-color: var(--clr-background);
-  display: grid;
 
   & > * {
     place-self: center;
