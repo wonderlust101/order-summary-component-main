@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button/Button.tsx";
+import MusicLogo from "../../assets/images/icon-music.svg";
 
 type OrderDetailsProps = {
     planType: string;
@@ -18,7 +19,7 @@ export default function OrderDetails({planType, costPerPeriod}:OrderDetailsProps
     return (
         <section className="order-summary__type">
             <div className="order-summary__cost">
-                <img className="order-summary__type-icon" src="src/assets/images/icon-music.svg" alt="Music Icon"
+                <img className="order-summary__type-icon" src={MusicLogo} alt="Music Icon"
                      aria-hidden="true"/>
                 <div>
                     <h3>

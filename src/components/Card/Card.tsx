@@ -1,12 +1,13 @@
 import React from "react";
 import OrderDetails from "./OrderDetails.tsx";
 import Button from "../Button/Button.tsx";
+import CardHeader from '../../assets/images/illustration-hero.svg';
 
 
 export default function Card({}): React.JSX.Element {
     return (
         <section className="order-summary">
-            <img src="src/assets/images/illustration-hero.svg" alt="" aria-hidden="true"/>
+            <img src={CardHeader} alt="" aria-hidden="true"/>
 
             <section className="order-summary__details">
                 <header className="order-summary__section-grid">
